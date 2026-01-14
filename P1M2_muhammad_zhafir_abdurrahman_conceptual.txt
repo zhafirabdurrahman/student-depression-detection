@@ -1,0 +1,32 @@
+Muhammad Zhafir Abdurrahman
+RMT-049
+
+1 . Jelaskan latar belakang adanya bagging dan cara kerja bagging
+Jawaban:
+Bagging merupakan singkatan dari Bootstrap Aggregating berdasarkan kedua data tersebut juga diketahui bahwa bagging merupakan kombinasi antara Bootstraping dan Aggregation yang membentuk suatu ensemble model.
+Bagging digunakan untuk mengatasi masalah pada model machine learning khususnya model yang memiliki variansi tinggi seperti decision tree karena sangat sensitif pada perubahan kecil dan rentan overfitting.
+Cara kerjanya adalah dengan : 
+- Bootstrap sampling yaitu membuat beberapa subset data secara acak dengan pengembalian.
+- Train multiple models, yaitu melatih banyak model yang sama pada subset data yang berbeda.
+- Aggregate Prediction, menggabungkan prediksi menjadi sebuah voting untuk kasus klasifikasi dan rata-rata untuk regresi.
+
+Contoh dari bagging algoritma adalah Random Forest yang tiap model independennya merupakan decision tree
+
+2. Jelaskan perbedaan cara kerja algoritma Random Forest dengan algoritma boosting yang Anda pilih!
+Jawaban:
+- Algoritma Random Forest bekerja berdasarkan konsep bagging dimana melatih banyak decision tree secara paralel pada subset dan diambil dengan cara bootstrap.
+Setiap tree belajar secara independen, sehingga kesalahan satu tree tidak mempengaruhi tree lainnya. Hasil prediksi ditentukan dengan mengambil hasil voting mayoritas,
+sehingga algoritma Random Forest mampu mengurangi variansi dan menghasilkan model yang stabil dan tidak mudah overfitting.
+
+- Algoritma yang saya gunakan pada model saya adalah XGBoost, perbedaan dengan Random Forest adalah XGBoost bekerja dengan cara sekuensial, dimana setiap pohon baru dibangun untuk
+memperbaiki kesalahan pada pohon sebelumnya dan akan menghitung residual errornya dengan pendekatan gradient boosting untuk mengurangi error, lalu menambahkan regulasi (L1 dan L2)
+untuk mengukur kompleksitas model.
+Sehingga dapat disimpulkan bahwa Random Forest membangun model independen, XGBoost membangun model yang saling bergantung sehingga dapat menghasilkan akurasi lebih tinggi namun lebih rentan overfitting jika tidak dituning.
+Dengan demikian, Random Forest berfokus pada pengurangan variansi melalui ensemble paralel, sedangkan XGBoost meningkatkan akurasi dengan mengurangi bias melalui pembelajaran berurutan.
+
+3. Jelaskan apa yang dimaksud dengan Cross Validation !
+Jawaban:
+Cross Validation merupakan teknik untuk mengestimasi atau evaluasi sebuah performa model pada unseen data dengan cara membagi dataset menjadi beberapa fold untuk memastikan bahwa model diuji pada berbagai subset data.
+Cross validation bertujuan untuk mendapatkan penilaian performa yang lebih akurat, stabil dan tidak bias dibandingkan dengan hanya menggunakan satu pembagian train-test set.
+Cara kerja cross validation adalah dengan menentukan jumlah fold (k fold) dan proses diulang terus menerus sesuai dengan jumlah foldnya dan hasilnya akan dirata-ratakan.
+Proses ini bertujuan untuk mengurangi risiki overfitting dan gambaran model dalam menghadapi data baru.

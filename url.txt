@@ -1,0 +1,3 @@
+https://huggingface.co/spaces/zhafirabd/student-depression-detection
+https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset
+https://drive.google.com/drive/folders/1GRuvTOV6Fm8vRgaZY7-W8bLypOOaDlt7
