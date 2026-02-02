@@ -1,5 +1,4 @@
-# Judul Project
-Student Depressin Detection
+# Student Depression Detection
 
 ## Repository Outline
 1. README.md - Penjelasan gambaran umum project
