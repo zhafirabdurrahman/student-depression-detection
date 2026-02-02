@@ -1,38 +1,64 @@
-# Student Depression Detection
 
-## Repository Outline
-1. README.md - Penjelasan gambaran umum project
-2. P1M2_muhammad_zhafir_abdurrahman.ipynb - Notebook yang berisi pengolahan data berupa EDA dan modeling menggunakan algoritman SVC.
-3. P1M2_muhammad_zhafir_abdurrahman_inf - Notebook ini berisi pengujian model menggunakan data baru.
-4. P1M2_muhammad_zhafir_abdurrahman_conceptual.txt - Berisi text mengenai jawaban dari pertanyaan conceptual.
-5. deployment_ - folder yang berisi file yang digunakan dalam deployment model menggunakan streamlit dan hugging face.
-6. url.txt - berisi url yang digunakan dalam project ini.
+**File Description:**
+- **README.md**  
+  General project documentation  
+- **modeling.ipynb**  
+  Notebook containing Exploratory Data Analysis (EDA) and model development using the SVC algorithm  
+- **inference.ipynb**  
+  Notebook for model inference and testing using new data  
+- **deployment**  
+  Folder containing files used for model deployment with Streamlit and Hugging Face  
+- **url.txt**  
+  File containing URLs related to this project  
 
-## Problem Background
-Depresi merupakan salah satu gangguan kesehatan mental yang semakin sering terjadi dikalangan pelajar. Depresi tidak hanya menyebabkan masalah pada kesehatan mental tapi juga dapat berpengaruh pada kegiatan sehari-hari, hal yang terdekat pada pelajar adalah penurunan performa akademik, burnout, bahkan tidak ingin melanjutkan studi-nya (_drop out_). Sehingga depresi ini harus ditangani dengan baik untuk menghindari risiko risiko yang kemungkinan akan terjadi dimasa depan, salah satunya adalah dengan mendeteksi awal (_screening_) mengenai apakah pelajar berpotensi mengalami depresi atau tidak.
+---
 
-## Project Output
-Output pada project ini adalah model yang dapat memprediksi tingkat depresi pada pelajar menggunkan algoritma SVC, hasil program dilakukan deployment menggunakan streamlit dan hugging face sehingga user dapat menggunakan program tersebut dengan menambahkan data baru
+## 📖 Problem Background
+Depression is one of the most common mental health disorders among students. It not only affects mental well-being but also has a significant impact on daily activities, particularly academic performance. Depression can lead to burnout, declining academic results, and even the decision to discontinue studies (dropout).
 
-## Data
-Sumber data berdasarkan dari dataset yang diambil dari situs [kaggle](https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset), dataset berisi 18 Kolom dan 27901 baris, tiap baris berisi data pelajar yang tersebar pada berbagai kota di India, pada dataset ini tidak ada missing value dan data duplicate.
+Therefore, depression must be addressed early to reduce potential long-term risks. One effective approach is early detection (_screening_) to identify whether a student is at risk of depression.
 
-## Method
-Project ini bertujuan untuk memprediksi tingkat depresi (Depressed, Not Depressed) menggunakan supervised machine learning, metode yang dipakai adalah model Support Vector Machine.
+---
 
-## Stacks
-Adapun bahasa pemrograman, tools dan library yang digunakan pada project ini adalah:
-1. python
-2. VSCode
-3. Streamlit
-4. HuggingFace
-5. scikit-learn
-6. pandas
-7. numpy
-8. matplotlib
-9. seaborn
+## 🎯 Project Output
+The output of this project is a machine learning model capable of predicting student depression status (**Depressed** or **Not Depressed**) using the Support Vector Classifier (SVC) algorithm.  
+The model is deployed using **Streamlit** and **Hugging Face**, allowing users to perform predictions by inputting new data.
 
-## Reference
-- [Artikel Tekanan Akademis Terhadap Mental Remaja](https://labcito.co.id/tekanan-akademis/)
-- [Model Deployment](https://huggingface.co/spaces/zhafirabd/student-depression-detection)
-- [Dataset](https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset)
+---
+
+## 📊 Data Description
+- **Source:** Kaggle  
+- **Dataset:** Student Depression Dataset  
+- **Rows:** 27,901  
+- **Columns:** 18  
+- **Coverage:** Students from various cities in India  
+- **Data Quality:** No missing values and no duplicate records  
+
+Dataset link:  
+https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset
+
+---
+
+## 🔍 Methodology
+This project uses **supervised machine learning** to classify student depression status (**Depressed** vs **Not Depressed**).  
+The algorithm applied is **Support Vector Machine (SVM)** with a Support Vector Classifier (SVC).
+
+---
+
+## 🛠️ Tech Stack
+
+| Category              | Tools / Libraries              |
+|-----------------------|--------------------------------|
+| Programming Language  | Python                         |
+| IDE / Tools           | VS Code                        |
+| Machine Learning      | scikit-learn                   |
+| Data Manipulation     | pandas, numpy                  |
+| Data Visualization    | matplotlib, seaborn            |
+| Deployment            | Streamlit, Hugging Face        |
+
+---
+
+## 🔗 References
+- [Academic Pressure and Adolescent Mental Health](https://labcito.co.id/tekanan-akademis/)
+- [Model Deployment (Hugging Face)](https://huggingface.co/spaces/zhafirabd/student-depression-detection)
+- [Dataset Source](https://www.kaggle.com/datasets/adilshamim8/student-depression-dataset)
